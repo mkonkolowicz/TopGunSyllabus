@@ -3,44 +3,54 @@
     android:id="@+id/mainScrollView"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
-    android:background="#cce0ff"
+    android:background="#000000"
     android:minWidth="25px"
     android:minHeight="25px">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="fill_parent"
         android:paddingLeft="20dp"
-        android:paddingRight="20dp">
+        android:paddingRight="20dp"
+        android:background="#000000">
         <ImageView
-            android:src="@android:drawable/ic_menu_gallery"
+            android:src="@drawable/topgun_teamfortress"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:id="@+id/phaseDetailImageView"
             android:layout_gravity="center_horizontal" />
         <TextView
-            android:text="Phase Name"
+            android:text="Phase Summary"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/phaseNameTextView"
-            android:paddingTop="20dp"
-            android:textSize="20dp"
-            android:textColor="@android:color/black" />
+            android:id="@+id/PhaseSummaryLabel"
+            android:paddingBottom="5dp"
+            android:paddingTop="80dp" />
         <TextView
-            android:text="Summary"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/phaseSummaryTextView"
             android:textColor="@android:color/black"
-            android:paddingTop="20dp"
-            android:textSize="16dp" />
+            android:background="@android:color/white"
+            android:textSize="16dp"
+            android:paddingBottom="20dp" />
         <TextView
-            android:text="Learning Objectives"
+            android:text="Phase Learning Objectives"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#A9A9A9"
+            android:id="@+id/PhaseLearningObjectivesLabel"
+            android:paddingBottom="5dp"
+            android:paddingTop="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="146.5dp"
             android:id="@+id/phaseLearningObjectivesTextView"
             android:textColor="@android:color/black"
-            android:paddingTop="20dp"
-            android:textSize="16dp" />
+            android:background="@android:color/white"
+            android:textSize="16dp"
+            android:paddingBottom="5dp" />
     </LinearLayout>
 </ScrollView>

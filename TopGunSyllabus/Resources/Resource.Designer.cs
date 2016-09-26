@@ -63,8 +63,14 @@ namespace TopGunSyllabus.Android
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050005
-			public const int PhasesListView = 2131034117;
+			// aapt resource value: 0x7f050004
+			public const int PhaseLearningObjectivesLabel = 2131034116;
+			
+			// aapt resource value: 0x7f050002
+			public const int PhaseSummaryLabel = 2131034114;
+			
+			// aapt resource value: 0x7f050006
+			public const int PhasesListView = 2131034118;
 			
 			// aapt resource value: 0x7f050000
 			public const int mainScrollView = 2131034112;
@@ -72,11 +78,8 @@ namespace TopGunSyllabus.Android
 			// aapt resource value: 0x7f050001
 			public const int phaseDetailImageView = 2131034113;
 			
-			// aapt resource value: 0x7f050004
-			public const int phaseLearningObjectivesTextView = 2131034116;
-			
-			// aapt resource value: 0x7f050002
-			public const int phaseNameTextView = 2131034114;
+			// aapt resource value: 0x7f050005
+			public const int phaseLearningObjectivesTextView = 2131034117;
 			
 			// aapt resource value: 0x7f050003
 			public const int phaseSummaryTextView = 2131034115;

@@ -30,22 +30,14 @@ namespace TopGunSyllabus.Android
 
         private void FindViews()
         {
-            phaseDetailImageView = FindViewById<ImageView>(Resource.Id.phaseDetailImageView);
-            phaseNameTextView = FindViewById<TextView>(Resource.Id.phaseNameTextView);
             phaseSummaryTextView = FindViewById<TextView>(Resource.Id.phaseSummaryTextView);
             phaseLearningObjectivesTextView = FindViewById<TextView>(Resource.Id.phaseLearningObjectivesTextView);
         }
 
         private void BindData()
         {
-            phaseNameTextView.Text = selectedPhase.Name;
             phaseSummaryTextView.Text = selectedPhase.Summary;
             phaseLearningObjectivesTextView.Text = selectedPhase.LearningObjectives;
-
-            var imageBitmap =
-                ImageHelper.GetImageBitmapFromUrl(
-                    "https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.pleasantviewchiropractic.com%2Fimages%2Fnumber41.png&imgrefurl=http%3A%2F%2Fwww.pleasantviewchiropractic.com%2Fappointment-information.html&docid=05ahGW8tuRaltM&tbnid=d1DLp5FoMAccmM%3A&w=512&h=512&ved=0ahUKEwiC7taFq4LMAhWGw4MKHWWZDh0QMwglKAAwAA&iact=mrc&uact=8");
-            phaseDetailImageView.SetImageBitmap(imageBitmap);
         }
         
     }

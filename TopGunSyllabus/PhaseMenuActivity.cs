@@ -8,7 +8,7 @@ using TopGunSyllabus.Core.Service;
 
 namespace TopGunSyllabus.Android
 {
-    [Activity(Label = "Top Gun Syllabus",MainLauncher = true)]
+    [Activity(Label = "Phases",MainLauncher = true)]
     public class PhaseMenuActivity : Activity
     {
         private ListView phaseListView;
