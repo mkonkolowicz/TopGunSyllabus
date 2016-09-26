@@ -100,6 +100,24 @@
     <CodesignProvision>Automatic:AppStore</CodesignProvision>
     <CodesignKey>iPhone Distribution</CodesignKey>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'iOS Release|iPhoneSimulator'">
+    <OutputPath>bin\iPhoneSimulator\iOS Release\</OutputPath>
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'iOS Release|iPhone'">
+    <OutputPath>bin\iPhone\iOS Release\</OutputPath>
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="DataSources\PhaseDataSource.cs" />
     <Compile Include="Main.cs" />
@@ -148,6 +166,17 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
   </ItemGroup>
+  <PropertyGroup>
+    <CreateIpaDependsOn>
+		  $(CreateIpaDependsOn);
+		  CopyIpa
+	  </CreateIpaDependsOn>
+  </PropertyGroup>
+  <Target Name="CopyIpa" Condition="'$(OutputType)' == 'Exe'&#xD;&#xA;		  And '$(ComputedPlatform)' == 'iPhone'&#xD;&#xA;		  And '$(BuildIpa)' == 'true'">
+    <Copy SourceFiles="$(OutputPath)$(IpaPackageName)" DestinationFolder="/Users/mkonkolowicz/Desktop/" />
+  </Target>
 </Project>

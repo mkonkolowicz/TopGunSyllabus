@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="41">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
@@ -7,13 +7,13 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="PhaseDetailViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PhaseDetailViewController" customModuleProvider="" sceneMemberID="viewController" title="Phase Detail" hidesBottomBarWhenPushed="YES">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="1"/>
                         <subviews>
@@ -27,102 +27,88 @@
                                     <rect key="frame" x="228" y="42" width="152" height="21"/>
                                 </variation>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="6" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="32" y="163" width="160" height="240"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="31" y="276" width="338" height="225"/>
-                                </variation>
-                                <color key="textColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                <string key="text">I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,I am the phase details,</string>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="7" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="32" y="163" width="160" height="240"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="widthClass=compact">
-                                    <rect key="frame" x="31" y="139" width="338" height="104"/>
-                                    <mask key="constraints">
-                                        <include reference="10"/>
-                                        <include reference="11"/>
-                                    </mask>
-                                </variation>
-                                <color key="textColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                <string key="text">I am the phase summary,I am the phase summary,I am the phase summary,I am the phase summary,I am the phase summary,I am the phase summary,I am the phase summary,I am the phase summary,I am the phase summary,I am the phase summary,</string>
-                                <constraints>
-                                    <constraint id="10" firstAttribute="width" constant="338"/>
-                                    <constraint id="11" firstAttribute="height" constant="104"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="10"/>
-                                        <exclude reference="11"/>
-                                    </mask>
-                                </variation>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="3" translatesAutoresizingMaskIntoConstraints="NO" image="Images/topgun_teamfortress.png" fixedFrame="YES">
-                                <rect key="frame" x="188" y="34" width="160" height="240"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="15" y="20" width="193" height="52"/>
-                                </variation>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3451" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="Images/topgun_teamfortress.png" semanticContentAttribute="playback">
+                                <rect key="frame" x="23" y="75" width="308" height="128"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phase Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3452" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="246" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" id="3453" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="290" width="314" height="95"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phase Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3454" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="279" y="438" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" id="3455" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="450" width="314" height="113"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3462" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="Phase Learning Objectives" enabled="NO">
+                                <rect key="frame" x="20" y="421" width="311" height="21"/>
+                                <nil key="highlightedColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3463" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="Phase Summary" enabled="NO">
+                                <rect key="frame" x="20" y="261" width="141" height="21"/>
+                                <nil key="highlightedColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                            </label>
                         </subviews>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="3"/>
                                 <exclude reference="4"/>
-                                <exclude reference="6"/>
-                                <exclude reference="7"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="8"/>
-                                <exclude reference="9"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="3"/>
                                 <include reference="4"/>
-                                <include reference="6"/>
-                                <include reference="7"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="8"/>
-                                <include reference="9"/>
                             </mask>
                         </variation>
-                        <constraints>
-                            <constraint id="8" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="7" secondAttribute="trailing" constant="31"/>
-                            <constraint id="9" firstItem="7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="139"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="TopGunSyllabusLabel" destination="4" id="name-outlet-4"/>
-                        <outlet property="PhaseDetails" destination="6" id="name-outlet-6"/>
-                        <outlet property="PhaseSummary" destination="7" id="name-outlet-7"/>
-                        <outlet property="Banner" destination="3" id="name-outlet-3"/>
+                        <outlet property="PhaseDetailPicture" destination="3451" id="name-outlet-3451"/>
+                        <outlet property="PhaseSummaryLabel" destination="3452" id="name-outlet-3452"/>
+                        <outlet property="PhaseDetailLabel" destination="3454" id="name-outlet-3454"/>
+                        <outlet property="LearningObjectivesText" destination="3455" id="name-outlet-3455"/>
+                        <outlet property="PhaseSummaryText" destination="3453" id="name-outlet-3453"/>
                     </connections>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="92" y="-335"/>
+            <point key="canvasLocation" x="102" y="-416"/>
         </scene>
         <scene sceneID="19">
             <objects>
                 <tableViewController id="20" sceneMemberID="viewController" customClass="PhaseTableViewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="21">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="24" rowHeight="44">
-                                <rect key="frame" x="0.0" y="22" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="22" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="24" id="25">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -135,7 +121,12 @@
                             <outlet property="delegate" destination="20" id="23"/>
                         </connections>
                     </tableView>
-                    <navigationItem title="Top Gun Syllabus" id="895" key="navigationItem"/>
+                    <navigationItem title="Phases" id="895" key="navigationItem">
+                        <accessibility key="accessibilityConfiguration">
+                            <bool key="isElement" value="YES"/>
+                            <accessibilityConfiguration key="traits" link="YES"/>
+                        </accessibility>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="26" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -143,14 +134,16 @@
         </scene>
         <scene sceneID="40">
             <objects>
-                <navigationController definesPresentationContext="YES" id="41" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="41" sceneMemberID="viewController" title="Top Gun Syllabus">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="44">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                        <rect key="frame" x="0.0" y="20" width="880" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                     </navigationBar>
                     <connections>
                         <segue id="2528" destination="1458" kind="relationship" relationship="rootViewController"/>
                     </connections>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -164,22 +157,32 @@
                         <viewControllerLayoutGuide type="bottom" id="1456"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1459">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1462" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="217" y="268" width="166" height="65"/>
+                                <rect key="frame" x="124" y="336" width="166" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17" weight="heavy"/>
                                 <state key="normal" title="See Phases">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue id="2898" destination="20" kind="show"/>
                                 </connections>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="124" y="363" width="166" height="65"/>
+                                </variation>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3464" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="Images/topgun_teamfortress.png" semanticContentAttribute="playback">
+                                <rect key="frame" x="53" y="188" width="308" height="128"/>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="53" y="227" width="308" height="128"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                     </view>
-                    <navigationItem title="Top Gun Syllabus" id="1616" key="navigationItem"/>
+                    <navigationItem id="1616" key="navigationItem" title="Home"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1460" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -188,8 +191,11 @@
     </scenes>
     <resources>
         <image name="Images/topgun_teamfortress.png" width="1757" height="470"/>
-        <image name="topgun_teamfortress.png" width="1757" height="470"/>
         <image name="Icon.png" width="57" height="57"/>
         <image name="Images/TopGunIPhone6Plus.png" width="1242" height="2208"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina55"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
+    </simulatedMetricsContainer>
 </document>

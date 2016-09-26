@@ -9,8 +9,6 @@ namespace TopGunSyllabus.iPhone
     {
         public PhaseDetailViewController(IntPtr handle) : base(handle)
         {
-            //PhaseDataService phaseDataService = new PhaseDataService();
-            //SelectedPhase = phaseDataService.ReturnPhaseById(1);
         }
 
         public Phase SelectedPhase
@@ -24,10 +22,9 @@ namespace TopGunSyllabus.iPhone
 
         private void DataBindUI()
         {
-            PhaseSummary.Text = SelectedPhase.Summary;
-            PhaseDetails.Text = SelectedPhase.LearningObjectives;
-            var banner = new UIImageView {Image = UIImage.FromFile("Images\topgun_teamfortress.png")};
-            this.Banner = banner;
+            PhaseSummaryText.Text= SelectedPhase.Summary;
+            LearningObjectivesText.Text = SelectedPhase.LearningObjectives;
+            PhaseDetailPicture = new UIImageView { Image = UIImage.FromFile("Images\topgun_teamfortress.png") };
         }
 
         public override void DidReceiveMemoryWarning()
