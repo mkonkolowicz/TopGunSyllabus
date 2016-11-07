@@ -20,7 +20,7 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>False</ConsolePause>
     <MtouchArch>i386</MtouchArch>
-    <MtouchLink>None</MtouchLink>
+    <MtouchLink>Full</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
@@ -29,7 +29,7 @@
     <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <MtouchLink>None</MtouchLink>
+    <MtouchLink>Full</MtouchLink>
     <MtouchArch>i386</MtouchArch>
     <ConsolePause>false</ConsolePause>
     <BuildIpa>True</BuildIpa>
@@ -144,6 +144,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <ITunesArtwork Include="iTunesArtwork" />
     <ITunesArtwork Include="iTunesArtwork%402x" />
+    <Compile Include="UIPhases.cs" />
+    <Compile Include="UIPhases.designer.cs">
+      <DependentUpon>UIPhases.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PhaseDetailViewController.designer.cs">
@@ -189,7 +193,7 @@
 		  CopyIpa
 	  </CreateIpaDependsOn>
   </PropertyGroup>
-  <Target Name="CopyIpa" Condition="'$(OutputType)' == 'Exe'&#xD;&#xA;		  And '$(ComputedPlatform)' == 'iPhone'&#xD;&#xA;		  And '$(BuildIpa)' == 'true'">
+  <Target Name="CopyIpa" Condition="'$(OutputType)' == 'Exe'&#xD;&#xA;&#x9;&#x9;  And '$(ComputedPlatform)' == 'iPhone'&#xD;&#xA;&#x9;&#x9;  And '$(BuildIpa)' == 'true'">
     <Copy SourceFiles="$(OutputPath)$(IpaPackageName)" DestinationFolder="/Users/mkonkolowicz/Desktop/" />
   </Target>
 </Project>
