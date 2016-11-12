@@ -1,6 +1,5 @@
 ﻿using System;
 using TopGunSyllabus.Core.Model;
-using TopGunSyllabus.Core.Service;
 using UIKit;
 
 namespace TopGunSyllabus.iPhone
