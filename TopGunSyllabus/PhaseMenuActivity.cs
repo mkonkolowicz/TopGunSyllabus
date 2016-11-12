@@ -26,6 +26,7 @@ namespace TopGunSyllabus.Android
             allPhases = phaseDataService.GetAllPhases();
             phaseListView.Adapter = new PhaseListAdapter(this,allPhases);
             phaseListView.ItemClick += OnListItemClick;
+            //todo: add app id to app.config
             CrashManager.Register(this, "cf7c46caa58a445b8bb574dfb34deea6");
             MetricsManager.Register(Application, "cf7c46caa58a445b8bb574dfb34deea6");
         }
