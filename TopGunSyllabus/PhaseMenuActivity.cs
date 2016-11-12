@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using Android.App;
 using Android.OS;
 using Android.Widget;
+using HockeyApp.Android;
+using HockeyApp.Android.Metrics;
 using TopGunSyllabus.Android.Adapters;
 using TopGunSyllabus.Core.Model;
 using TopGunSyllabus.Core.Service;
@@ -13,8 +15,8 @@ namespace TopGunSyllabus.Android
     {
         private ListView phaseListView;
         private List<Phase> allPhases;
-        private PhaseDataService phaseDataService; 
-
+        private PhaseDataService phaseDataService;
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -24,6 +26,8 @@ namespace TopGunSyllabus.Android
             allPhases = phaseDataService.GetAllPhases();
             phaseListView.Adapter = new PhaseListAdapter(this,allPhases);
             phaseListView.ItemClick += OnListItemClick;
+            CrashManager.Register(this, "cf7c46caa58a445b8bb574dfb34deea6");
+            MetricsManager.Register(Application, "cf7c46caa58a445b8bb574dfb34deea6");
         }
 
         void OnListItemClick(object sender, AdapterView.ItemClickEventArgs e)
