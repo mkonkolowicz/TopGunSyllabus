@@ -22,7 +22,7 @@ namespace TopGunSyllabus.UITests
             // and select the app projects that should be tested.
             app = ConfigureApp
                 .Android
-                .DeviceSerial(_deviceToTestOn)
+                //.DeviceSerial(_deviceToTestOn)
                 .ApkFile (_pathToAPK)
                 .StartApp();
         }
