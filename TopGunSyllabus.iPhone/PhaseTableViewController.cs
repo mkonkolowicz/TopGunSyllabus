@@ -20,6 +20,7 @@ namespace TopGunSyllabus.iPhone
 			var dataSource = new PhaseDataSource(phases,this);
 
 			TableView.Source = dataSource;
+		    TableView.AccessibilityIdentifier = "UIPhasesTable";
 			this.NavigationItem.Title = "Top Gun Phases";
 		}
 

@@ -8,6 +8,7 @@ namespace TopGunSyllabus.iPhone
     {
         public UIPhases (IntPtr handle) : base (handle)
         {
+            this.AccessibilityIdentifier = "UISeePhases";
         }
     }
 }
