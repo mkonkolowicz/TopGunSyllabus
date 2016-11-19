@@ -145,10 +145,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <ITunesArtwork Include="iTunesArtwork" />
     <ITunesArtwork Include="iTunesArtwork%402x" />
-    <Compile Include="UIPhases.cs" />
-    <Compile Include="UIPhases.designer.cs">
-      <DependentUpon>UIPhases.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PhaseDetailViewController.designer.cs">
