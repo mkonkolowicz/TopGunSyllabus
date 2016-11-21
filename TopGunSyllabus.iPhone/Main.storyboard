@@ -114,7 +114,9 @@
                                 <connections>
                                     <segue id="3437" destination="BYZ-38-t0r" kind="show" identifier="PhaseDetailSegue"/>
                                 </connections>
-                                <accessibility key="accessibilityConfiguration" identifier="UIPhase"/>
+                                <accessibility key="accessibilityConfiguration" identifier="UIPhase">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </tableViewCell>
                         </prototypes>
                         <connections>
