@@ -125,7 +125,7 @@
                         </connections>
                     </tableView>
                     <navigationItem title="Phases" id="895" key="navigationItem">
-                        <accessibility key="accessibilityConfiguration">
+                        <accessibility key="accessibilityConfiguration" identifier="UIPhasesTitle">
                             <bool key="isElement" value="YES"/>
                             <accessibilityConfiguration key="traits" link="YES"/>
                         </accessibility>
