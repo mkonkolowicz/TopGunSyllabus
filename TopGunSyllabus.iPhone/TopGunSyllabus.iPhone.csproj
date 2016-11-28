@@ -35,7 +35,7 @@
     <ConsolePause>false</ConsolePause>
     <BuildIpa>True</BuildIpa>
     <IpaIncludeArtwork>False</IpaIncludeArtwork>
-    <MtouchSdkVersion>10.0</MtouchSdkVersion>
+    <MtouchSdkVersion>10.1</MtouchSdkVersion>
     <MtouchDebug>True</MtouchDebug>
     <MtouchProfiling>False</MtouchProfiling>
     <MtouchFastDev>False</MtouchFastDev>
