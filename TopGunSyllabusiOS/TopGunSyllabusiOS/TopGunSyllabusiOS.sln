@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopGunSyllabusiOS", "TopGunSyllabusiOS.csproj", "{C244D26F-28DF-4919-9A86-F8CE907F3248}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C244D26F-28DF-4919-9A86-F8CE907F3248}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{C244D26F-28DF-4919-9A86-F8CE907F3248}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{C244D26F-28DF-4919-9A86-F8CE907F3248}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{C244D26F-28DF-4919-9A86-F8CE907F3248}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{C244D26F-28DF-4919-9A86-F8CE907F3248}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{C244D26F-28DF-4919-9A86-F8CE907F3248}.Debug|iPhone.Build.0 = Debug|iPhone
+		{C244D26F-28DF-4919-9A86-F8CE907F3248}.Release|iPhone.ActiveCfg = Release|iPhone
+		{C244D26F-28DF-4919-9A86-F8CE907F3248}.Release|iPhone.Build.0 = Release|iPhone
+		{C244D26F-28DF-4919-9A86-F8CE907F3248}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{C244D26F-28DF-4919-9A86-F8CE907F3248}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{C244D26F-28DF-4919-9A86-F8CE907F3248}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{C244D26F-28DF-4919-9A86-F8CE907F3248}.AppStore|iPhone.Build.0 = AppStore|iPhone
+	EndGlobalSection
+EndGlobal

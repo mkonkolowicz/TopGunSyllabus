@@ -7,6 +7,9 @@ using HockeyApp.Android.Metrics;
 using TopGunSyllabus.Android.Adapters;
 using TopGunSyllabus.Core.Model;
 using TopGunSyllabus.Core.Service;
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
 
 namespace TopGunSyllabus.Android
 {
@@ -29,6 +32,7 @@ namespace TopGunSyllabus.Android
             //todo: add app id to app.config
             CrashManager.Register(this, "cf7c46caa58a445b8bb574dfb34deea6");
             MetricsManager.Register(Application, "cf7c46caa58a445b8bb574dfb34deea6");
+			MobileCenter.Start("030463a0-0a5d-489f-aaf6-5a87474e2cbd", typeof(Analytics), typeof(Crashes));
         }
 
         void OnListItemClick(object sender, AdapterView.ItemClickEventArgs e)
